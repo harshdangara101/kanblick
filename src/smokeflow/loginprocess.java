@@ -24,11 +24,11 @@ System.setProperty("webdriver.chrome.driver", "F:\\driver\\chromedriver-win64\\c
         Thread.sleep(2000);
         driver.findElement(By.xpath("//input[@placeholder='Enter Full Name']")).sendKeys("Tim cook");
         Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter Phone Number']")).sendKeys("789797980");
+        driver.findElement(By.xpath("//input[@placeholder='Enter Phone Number']")).sendKeys("789797981");
         Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter Email Address']")).sendKeys("herry305@mailinator.com");
+        driver.findElement(By.xpath("//input[@placeholder='Enter Email Address']")).sendKeys("herry306@mailinator.com");
         Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter National ID']")).sendKeys("3353535512");
+        driver.findElement(By.xpath("//input[@placeholder='Enter National ID']")).sendKeys("3353535513");
         Thread.sleep(2000);
         driver.findElement(By.xpath("//input[@placeholder='Enter Password']")).sendKeys("Octal@123");
         Thread.sleep(2000);
@@ -41,7 +41,7 @@ System.setProperty("webdriver.chrome.driver", "F:\\driver\\chromedriver-win64\\c
         
         driver.findElement(By.xpath("//input[@value='company']")).click();
         Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@placeholder='Enter Est. Number']")).sendKeys("23424242333");
+        driver.findElement(By.xpath("//input[@placeholder='Enter Est. Number']")).sendKeys("23424242334");
         Thread.sleep(2000);
         driver.findElement(By.xpath("//body/div[contains(@data-overlay-container,'true')]/div/div/div/div/div/div/form/div/div[2]/div[1]")).click();
         Thread.sleep(2000);
@@ -51,10 +51,11 @@ System.setProperty("webdriver.chrome.driver", "F:\\driver\\chromedriver-win64\\c
         Thread.sleep(2000);
         driver.findElement(By.xpath("//input[@id='677fa19a688e55fc726d3ece']")).click();
         Thread.sleep(2000);
-        driver.findElement(By.xpath("//input[@id='terms-checkbox']")).click();
+        driver.findElement(By.xpath("//label[contains(@for,'terms-checkbox')]//*[name()='svg']")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("//button[text()='Next']")).click();
-        
+        Thread.sleep(10000);
+        driver.findElement(By.xpath("//button[@type='submit']")).click();
         
 	}
 
